@@ -1,0 +1,197 @@
+# Jordan tech companies and job boards to scrape
+# Indeed excluded: does not cover Jordan area
+
+job_boards:
+  - name: akhtaboot
+    scraper: akhtaboot
+    config:
+      location: jordan
+      keywords:
+        - software engineer
+        - data engineer
+        - data analyst
+        - machine learning
+        - AI
+        - backend developer
+        - data scientist
+        - data analyst
+        - data visualization
+        - data engineering
+        - data management
+        - data security
+        - data governance
+        - data integration
+        - data modeling
+        - data warehousing
+        - data science
+        - data analytics
+        - data architecture
+        - data modeling
+        - data warehousing
+        - data architecture
+        - data modeling
+        - data warehousing
+        - ML engineer
+        - AI engineer
+        - NLP engineer
+        - deep learning engineer
+        - computer vision engineer
+        - natural language processing engineer
+        - machine learning engineer
+        - AI engineer
+        - NLP engineer
+        - deep learning engineer
+        - computer vision engineer
+        - natural language processing engineer
+        - machine learning engineer
+
+  - name: bayt
+    scraper: bayt
+    config:
+      location: jordan
+      keywords:
+        - software engineer
+        - data engineer
+        - machine learning
+        - AI
+        - backend
+        - data scientist
+        - data analyst
+        - data visualization
+        - data engineering
+        - data management
+        - data security
+        - data governance
+        - data integration
+        - data modeling
+        - data warehousing
+        - data science
+        - data analytics
+        - data architecture
+        - data modeling
+        - data warehousing
+        - data architecture
+        - data modeling
+        - data warehousing
+        - ML engineer
+        - AI engineer
+        - NLP engineer
+        - deep learning engineer
+        - computer vision engineer
+        - natural language processing engineer
+        - machine learning engineer
+        - AI engineer
+        - NLP engineer
+        - deep learning engineer
+        - computer vision engineer
+        - natural language processing engineer
+        - machine learning engineer
+        - AI engineer
+        - NLP engineer
+        - deep learning engineer
+        - computer vision engineer
+
+# ATS platform companies (Jordan + MENA tech)
+companies:
+  - name: Foodics
+    scraper: workable
+    config:
+      account: foodics
+      company_name: Foodics
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: Talabat
+    scraper: smartrecruiters
+    config:
+      company_id: talabat
+      company_name: Talabat
+      careers_url: https://careers.talabat.com/jobs
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: PwC
+    scraper: workday
+    config:
+      base_url: pwc.wd3.myworkdayjobs.com
+      site_name: Global_Experienced_Careers
+      tenant: pwc
+      company_name: PwC
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: Majid Al Futtaim
+    scraper: phenom
+    config:
+      careers_url: https://careers.majidalfuttaim.com/global/en/search-results
+      company_name: Majid Al Futtaim
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: Jawaker
+    scraper: zenats
+    config:
+      careers_url: https://careers.jawaker.com/en/careers_page
+      company_name: Jawaker
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: Almosafer
+    scraper: jobsoid
+    config:
+      careers_url: https://jobs.almosafer.com/search/
+      company_name: Almosafer
+      locations_filter: [JO, Jordan, Amman]
+
+# Phase 3: Custom career pages (LLM extraction)
+  - name: ProgressSoft
+    scraper: generic_llm
+    config:
+      url: https://www.progressoft.com/careers
+      company_name: ProgressSoft
+      locations_filter: [Jordan, Amman]
+
+  - name: eSense
+    scraper: generic_llm
+    config:
+      url: https://new.esensesoftware.com/become-an-esenser/
+      company_name: eSense
+      locations_filter: [Jordan, Amman]
+
+  - name: JOSA
+    scraper: generic_llm
+    config:
+      url: https://josa.ngo/careers
+      company_name: JOSA
+      locations_filter: [Jordan, Amman]
+
+  - name: Prez Lab
+    scraper: generic_llm
+    config:
+      url: https://prezlab.com/careers-2/
+      company_name: Prez Lab
+      locations_filter: [Jordan, Amman]
+
+  - name: Wateen
+    scraper: generic_llm
+    config:
+      url: https://wateen.com/careers/
+      company_name: Wateen
+      locations_filter: [Jordan, Amman]
+
+  - name: Tatweer
+    scraper: generic_llm
+    config:
+      url: https://www.tatweermea.com/Home/Careers
+      company_name: Tatweer
+      locations_filter: [Jordan, Amman]
+
+  - name: KPMG Jordan
+    scraper: generic_llm
+    config:
+      url: https://kpmg.com/jo/en/home/careers.html
+      company_name: KPMG Jordan
+      locations_filter: [Jordan, Amman]
+
+  - name: MBC Group
+    scraper: generic_llm
+    config:
+      url: https://mbc.net/en/corporate/vacancies.html
+      company_name: MBC Group
+      locations_filter: [Jordan, Amman]
+

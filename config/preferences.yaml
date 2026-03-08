@@ -1,0 +1,58 @@
+# Job categories and AI config
+
+categories:
+  data:
+    keywords:
+      - data engineer
+      - data analyst
+      - data scientist
+      - analytics
+      - ETL
+      - dbt
+      - warehouse
+  ai_ml:
+    keywords:
+      - machine learning
+      - ML engineer
+      - AI
+      - NLP
+      - deep learning
+      - LLM
+      - computer vision
+  backend:
+    keywords:
+      - backend
+      - python developer
+      - java developer
+      - golang
+      - API
+  software_engineer:
+    keywords:
+      - software engineer
+      - software developer
+      - full stack
+      - fullstack
+      - frontend
+      - front-end
+
+filters:
+  exclude_keywords:
+    - intern
+    - internship
+  locations:
+    - jordan
+    - amman
+    - remote
+
+ai:
+  provider: ollama
+  ollama_url: http://localhost:11434
+  model: qwen2.5:7b
+  embedding_model: all-MiniLM-L6-v2
+  fallback_to_keywords: true
+
+# User profile for relevance scoring (Phase 2)
+user_profile:
+  skills: [python, sql, data engineering, machine learning, backend]
+  preferred_categories: [data, ai_ml, backend]
+  preferred_locations: [jordan, amman, remote]
