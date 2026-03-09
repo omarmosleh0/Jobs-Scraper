@@ -195,3 +195,19 @@ companies:
       company_name: MBC Group
       locations_filter: [Jordan, Amman]
 
+# Phase 4a: LinkedIn (EXPERIMENTAL - guest API, no auth)
+  - name: LinkedIn Jordan
+    scraper: linkedin
+    config:
+      location: Amman, Jordan
+      keywords:
+        - data engineer
+        - machine learning engineer
+        - backend developer
+        - software engineer
+        - data scientist
+        - AI engineer
+      max_pages_per_keyword: 2
+      min_delay: 5
+      max_delay: 15
+      fetch_descriptions: false

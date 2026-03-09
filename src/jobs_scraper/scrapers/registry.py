@@ -10,6 +10,7 @@ from jobs_scraper.scrapers.ats.phenom import PhenomScraper
 from jobs_scraper.scrapers.ats.zenats import ZenATSScraper
 from jobs_scraper.scrapers.ats.jobsoid import JobsoidScraper
 from jobs_scraper.scrapers.custom.generic_llm import GenericLLMScraper
+from jobs_scraper.scrapers.linkedin import LinkedInScraper
 
 _REGISTRY: dict[str, BaseScraper] = {
     "akhtaboot": AkhtabootScraper(),
@@ -21,6 +22,7 @@ _REGISTRY: dict[str, BaseScraper] = {
     "zenats": ZenATSScraper(),
     "jobsoid": JobsoidScraper(),
     "generic_llm": GenericLLMScraper(),
+    "linkedin": LinkedInScraper(),
 }
 
 
