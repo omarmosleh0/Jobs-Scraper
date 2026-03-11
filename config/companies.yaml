@@ -138,6 +138,56 @@ companies:
       company_name: Almosafer
       locations_filter: [JO, Jordan, Amman]
 
+  # Workable
+  - name: TAMATEM
+    scraper: workable
+    config:
+      account: tamatem
+      company_name: TAMATEM
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: Maqsam
+    scraper: workable
+    config:
+      account: maqsam
+      company_name: Maqsam
+      locations_filter: [JO, Jordan, Amman]
+
+  # ZenATS
+  - name: WUDUH
+    scraper: zenats
+    config:
+      careers_url: https://wuduh.zenats.com/en/careers_page
+      company_name: WUDUH
+      locations_filter: [JO, Jordan, Amman]
+
+  # SmartRecruiters
+  - name: Devoteam
+    scraper: smartrecruiters
+    config:
+      company_id: devoteam
+      company_name: Devoteam
+      careers_url: https://me.devoteam.com/jobs
+      locations_filter: [JO, Jordan, Amman]
+
+  # Avature (Deloitte)
+  - name: Deloitte
+    scraper: avature
+    config:
+      base_url: middleeastjobs.deloitte.com
+      careers_path: /careersME/SearchJobs
+      company_name: Deloitte
+      locations_filter: [JO, Jordan, Amman]
+
+  # iCIMS (SITA) - fetch from careers-sita.icims.com, job links point to careers.sita.aero
+  - name: SITA
+    scraper: icims
+    config:
+      base_url: careers-sita.icims.com
+      jobs_path: /jobs/search?in_iframe=1
+      company_name: SITA
+      locations_filter: [JO, Jordan, Amman]
+
 # Phase 3: Custom career pages (LLM extraction)
   - name: ProgressSoft
     scraper: generic_llm
@@ -193,6 +243,142 @@ companies:
     config:
       url: https://mbc.net/en/corporate/vacancies.html
       company_name: MBC Group
+      locations_filter: [Jordan, Amman]
+
+  # Banks (Jordan)
+  - name: Arab Bank
+    scraper: generic_llm
+    config:
+      url: https://www.arabbank.jo/smartmenu/smart-menu/careers
+      company_name: Arab Bank
+      locations_filter: [Jordan, Amman]
+
+  - name: Arab Jordan Investment Bank
+    scraper: generic_llm
+    config:
+      url: https://www.ajib.com/careers
+      company_name: Arab Jordan Investment Bank
+      locations_filter: [Jordan, Amman]
+
+  # Telecom (Jordan)
+  - name: Zain Jordan
+    scraper: generic_llm
+    config:
+      url: https://careers.zain.com
+      company_name: Zain Jordan
+      locations_filter: [Jordan, Amman]
+
+  - name: Orange Jordan
+    scraper: generic_llm
+    config:
+      url: https://jobs.orange.jo/search
+      company_name: Orange Jordan
+      locations_filter: [Jordan, Amman]
+
+  - name: Umniah
+    scraper: generic_llm
+    config:
+      url: https://www.umniah.com/careers
+      company_name: Umniah
+      locations_filter: [JO, Jordan, Amman]
+
+  # Tech companies
+  - name: Exos
+    scraper: generic_llm
+    config:
+      url: https://exoscorp.com/careers
+      company_name: Exos
+      locations_filter: [Jordan, Amman]
+
+  - name: Altibbi
+    scraper: zenats
+    config:
+      careers_url: https://altibbi.zenats.com/en/careers_page
+      company_name: Altibbi
+      locations_filter: [JO, Jordan, Amman]
+
+  - name: Eon Dental
+    scraper: generic_llm
+    config:
+      url: https://careers.eondental.com
+      company_name: Eon Dental
+      locations_filter: [Jordan, Amman]
+
+  - name: Tarjama
+    scraper: generic_llm
+    config:
+      url: https://tarjama.com/careers
+      company_name: Tarjama
+      locations_filter: [Jordan, Amman]
+
+  - name: Webook
+    scraper: generic_llm
+    config:
+      url: https://webook.digital
+      company_name: Webook
+      locations_filter: [Jordan, Amman]
+
+  - name: Altivate
+    scraper: generic_llm
+    config:
+      url: https://www.altivate.com/careers
+      company_name: Altivate
+      locations_filter: [Jordan, Amman]
+
+  - name: Black Oasis
+    scraper: generic_llm
+    config:
+      url: https://black-oasis.com/job-openings/
+      company_name: Black Oasis
+      locations_filter: [Jordan, Amman]
+
+  - name: INTECH Automation & Intelligence
+    scraper: generic_llm
+    config:
+      url: https://www.intechww.com/careers
+      company_name: INTECH Automation & Intelligence
+      locations_filter: [Jordan, Amman]
+
+  - name: Atypon
+    scraper: generic_llm
+    config:
+      url: https://www.atypon.com/careers
+      company_name: Atypon
+      locations_filter: [Jordan, Amman]
+
+  - name: Kitopi
+    scraper: generic_llm
+    config:
+      url: https://www.kitopi.com/careers
+      company_name: Kitopi
+      locations_filter: [Jordan, Amman]
+
+  - name: Navero
+    scraper: generic_llm
+    config:
+      url: https://www.navero.me
+      company_name: Navero
+      locations_filter: [Jordan, Amman]
+
+  - name: Careem
+    scraper: generic_llm
+    config:
+      url: https://jobs.careem.com
+      company_name: Careem
+      locations_filter: [Jordan, Amman]
+
+  - name: Kawader
+    scraper: generic_llm
+    config:
+      url: https://careers.kawader.biz
+      company_name: Kawader
+      locations_filter: [Jordan, Amman]
+
+  - name: Migrate
+    scraper: generic_llm
+    config:
+      url: https://new.migratebusiness.com/careers
+      company_name: Migrate
       locations_filter: [Jordan, Amman]
 
 # Phase 4a: LinkedIn (EXPERIMENTAL - guest API, no auth)
